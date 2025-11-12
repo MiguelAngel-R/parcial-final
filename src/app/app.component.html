@@ -13,24 +13,25 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-
         <div class="navegador collapse navbar-collapse" id="navMenu">
           <div class="nav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="#info">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#estudios">Nosotros</a></li>
-              <li class="nav-item"><a class="nav-link" href="#proyectos">Servicios</a></li>
-              <li class="nav-item"><a class="nav-link" href="#lenguajes">Contacto</a></li>                                                
+              <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contactos">Contacto</a></li>
+              <li>
+                <button class="btn btn-primary sesion" id="contacto" onclick="window.location.href()">Iniciar Sesion</button>                                                
+              </li>
             </ul>
           </div>            
-          <button class="btn btn-primary sesion" id="contacto" onclick="window.location.href()">Iniciar Sesion</button>
+          
         </div>
       </div>
     </nav>
   </div> 
-
+<section id="nosotros"></section>
   <div class="inicio row">
-    <div class="informacion-inicio col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12">
+    <div class="informacion-inicio col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <h1>Empoderando Comunidades Afectadas por la Minería</h1>
       <div class="texto">
         <p>
@@ -43,6 +44,7 @@
         <button class="btn btn-primary conocer">Conocer Historias</button>
       </div>
 
+      <section id="servicios"></section>
       <h1>Nuestros Servicios</h1>
       <div>
         <p class="descripcion">
@@ -50,32 +52,48 @@
         </p>          
       </div>
 
-      <div class="servicios">
-        <div class="tarjeta">
-          <img src="" alt="">  
-          <h5>Información y Recursos</h5>
-          <p>
-            Accede a una amplia gama de recursos, incluyendo guías legales, apoyo psicológico y programas de capacitación.
-          </p>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="servicios row">
+          <div class="tarjeta col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <img src="" alt="">  
+            <h5>Información y Recursos</h5>
+            <p>
+              Accede a una amplia gama de recursos, incluyendo guías legales, apoyo psicológico y programas de capacitación.
+            </p>
+          </div>
+          <div class="tarjeta col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <img src="" alt="">  
+            <h5>Comunidad de Apoyo</h5>
+            <p>
+              Conéctate con otras personas afectadas, comparte tus experiencias y encuentra apoyo mutuo.
+            </p>
+          </div>
+          <div class="tarjeta col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <img src="" alt="">  
+            <h5>Conexiones y Oportunidades</h5>
+            <p>
+              Encuentra oportunidades de empleo, proyectos de desarrollo comunitario y colabora con organizaciones que comparten tus objetivos.
+            </p>
+          </div>
         </div>
-        <div class="tarjeta">
-          <img src="" alt="">  
-          <h5>Comunidad de Apoyo</h5>
-          <p>
-            Conéctate con otras personas afectadas, comparte tus experiencias y encuentra apoyo mutuo.
-          </p>
-        </div>
-        <div class="tarjeta">
-          <img src="" alt="">  
-          <h5>Conexiones y Oportunidades</h5>
-          <p>
-            Encuentra oportunidades de empleo, proyectos de desarrollo comunitario y colabora con organizaciones que comparten tus objetivos.
-          </p>
+      </div>
+
+      <section id="contactos"></section>
+      <div class="contacto col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="contacto row">
+          <div class="contacto-info col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <h1>Contacto</h1>
+            <p>
+              ¿Tienes preguntas o necesitas ayuda? Contáctanos y estaremos encantados de asistirte.
+            </p>
+            <h2>Email:</h2>
+            <p>Resilienciaminera&#64;gmail.com
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
   <div class="row">
     <div class="container-datos col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <div class="row container-d">
@@ -95,8 +113,5 @@
     </div>
   </div>
 </div>
-
-
-
 
 <router-outlet />
