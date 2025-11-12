@@ -1,0 +1,102 @@
+<div class="container-fluid">
+  <div class="row contenedor-nav">        
+    <nav class="contenido navbar navbar-expand-lg navbar-light" >
+      <div class="container-fluid">          
+
+        <a class="logo navbar-brand d-flex align-items-center" href="#">
+            <img src="./img/logo.png" alt="Logo" width="40" class="me-2">
+            <h5 class="mb-0 titulo">Resiliencia Minera</h5>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Alternar navegación" id="contacto">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="navegador collapse navbar-collapse" id="navMenu">
+          <div class="nav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#info">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#estudios">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="#proyectos">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="#lenguajes">Contacto</a></li>                                                
+            </ul>
+          </div>            
+          <button class="btn btn-primary sesion" id="contacto" onclick="window.location.href()">Iniciar Sesion</button>
+        </div>
+      </div>
+    </nav>
+  </div> 
+
+  <div class="inicio row">
+    <div class="informacion-inicio col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12">
+      <h1>Empoderando Comunidades Afectadas por la Minería</h1>
+      <div class="texto">
+        <p>
+          Resiliencia Minera es una plataforma dedicada a apoyar a las personas y comunidades impactadas por la minería en Colombia.
+          Ofrecemos recursos, información y una comunidad de apoyo para ayudar en la recuperación y el desarrollo sostenible.
+        </p>          
+      </div>
+      <div class="botones">
+        <button class="btn btn-primary explorar">Explorar Recursos</button>
+        <button class="btn btn-primary conocer">Conocer Historias</button>
+      </div>
+
+      <h1>Nuestros Servicios</h1>
+      <div>
+        <p class="descripcion">
+          Descubre cómo Resiliencia Minera puede ayudarte a reconstruir y prosperar.
+        </p>          
+      </div>
+
+      <div class="servicios">
+        <div class="tarjeta">
+          <img src="" alt="">  
+          <h5>Información y Recursos</h5>
+          <p>
+            Accede a una amplia gama de recursos, incluyendo guías legales, apoyo psicológico y programas de capacitación.
+          </p>
+        </div>
+        <div class="tarjeta">
+          <img src="" alt="">  
+          <h5>Comunidad de Apoyo</h5>
+          <p>
+            Conéctate con otras personas afectadas, comparte tus experiencias y encuentra apoyo mutuo.
+          </p>
+        </div>
+        <div class="tarjeta">
+          <img src="" alt="">  
+          <h5>Conexiones y Oportunidades</h5>
+          <p>
+            Encuentra oportunidades de empleo, proyectos de desarrollo comunitario y colabora con organizaciones que comparten tus objetivos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container-datos col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="row container-d">
+        <div class="datos col-xs-2 col-sm-3 col-md-3 col-lg-3 col-xl-3 ">
+          <h1>150+</h1>
+          <p>Comunidades Apoyadas</p>
+        </div>
+        <div class="datos col-xs-2 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+          <h1>500+</h1>
+          <p>Recursos Compartidos</p>
+        </div>
+        <div class="datos col-xs-2 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+          <h1>75+</h1>
+          <p>Historias de Éxito</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<router-outlet />
